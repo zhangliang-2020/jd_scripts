@@ -10,10 +10,10 @@ let CookieJDs = [
 // 判断github action里面是否有京东ck
 if (process.env.JD_COOKIE) {
   if (process.env.JD_COOKIE.indexOf('&') > -1) {
-    console.log(`您的cookie选择的是用&隔开\n`)
+    console.log(`pt_key=AAJgPvEsADBIloB-M0mO4jwJvaduHt-mzb4wPmpCXosqkwB7ZmAgvzRqsSVYoPWwmHBfHs_1Hc4; pt_pin=jd_58595891aa9cb; pt_token=rnh8hf31;`)
     CookieJDs = process.env.JD_COOKIE.split('&');
   } else if (process.env.JD_COOKIE.indexOf('\n') > -1) {
-    console.log(`您的cookie选择的是用换行隔开\n`)
+    console.log(`pt_key=AAJgPvEsADBIloB-M0mO4jwJvaduHt-mzb4wPmpCXosqkwB7ZmAgvzRqsSVYoPWwmHBfHs_1Hc4; pt_pin=jd_58595891aa9cb; pt_token=rnh8hf31;`)
     CookieJDs = process.env.JD_COOKIE.split('\n');
   } else {
     CookieJDs = process.env.JD_COOKIE.split();
